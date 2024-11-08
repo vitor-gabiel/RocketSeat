@@ -38,7 +38,7 @@ Este projeto foi desenvolvido para exercitar habilidades em HTML, CSS e JavaScri
 
 ## 🔖 Layout
 
-Você pode visualizar o layout do projeto através [Desse Link](https://www.figma.com/design/yiM1GLZvTynvBOrbz81x9t/DevLinks-%E2%80%A2-Projeto-Discover-(Community)?node-id=1437-191&t=a9kDd3Ai15anheCB-1). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
+Você pode visualizar o layout do projeto através [Desse Link](https://www.figma.com/community/file/1187422022288947321/devlinks-projeto-discover). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
 
 ## :memo: Licença
 
@@ -47,4 +47,8 @@ Esse projeto está sob a licença MIT.
 ---
 
 Local de aprendizado [Discover - RockeatSeat](https://rockeatseat.com.br/discover)
+
+
 Feito com ♥ by Rocketseat :wave: [Participe da nossa comunidade!](https://discord.gg/rocketseat)
+
+##
