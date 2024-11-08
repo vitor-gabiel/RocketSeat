@@ -1,61 +1,83 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
+    <!-- Configuração das fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-
+    <!-- Configurações básicas da página -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projeto Rockeatseat</title>
+    <title>Projeto Rocketseat</title>
+
+    <!-- Link para o arquivo CSS externo -->
     <link rel="stylesheet" href="./style.css" />
   </head>
+
   <body>
+    <!-- Efeito de desfoque no fundo -->
     <div id="blur">
       <div id="blur2">
-    <div id="container">
-    <div id="profile">
-      <img src="./assets/Gaara.jpg"
-       alt="Imagem do Gaara segurando uma bandana de sua aldeia" />
-
-       <p>@vitor.g.silva_</p>
+        <!-- Contêiner principal do conteúdo -->
+        <div id="container">
+          <!-- Seção de perfil -->
+          <div id="profile">
+            <!-- Imagem de perfil com texto alternativo -->
+            <img src="./assets/Gaara.jpg" alt="Imagem do Gaara segurando uma bandana de sua aldeia" />
+            <p>@vitor.g.silva_</p>
           </div>
+
+          <!-- Botão para trocar o tema da página -->
           <div id="trocar-tema" onclick="MudarTema()">
             <button></button>
             <span></span>
           </div>
+
+          <!-- Lista de links principais -->
           <ul>
-    <li><a href="#">Inscrever-se ao NLW</a></li>
-    <li><a href="#">Baixar meu e-book</e-book></a></li>
-    <li><a href="#">Ver meu portifólio</a></li>
-    <li>
-      <a href="https://rocketseat.com.br/discover"
-      target="_blank">Melhor curso para Iniciantes</a>
-    </li>
-    </ul>
-    <div id="icones">
-      <a target="_blank">
-        <ion-icon name="logo-instagram"></ion-icon>
-      </a>
-      <a href="" target="_blank">
-        <ion-icon name="logo-github"></ion-icon>
-      </a>
-      <a href="" target="_blank">
-      <ion-icon name="logo-discord"></ion-icon>
-      </a>
-      <a href="" target="_blank">
-      <ion-icon name="logo-whatsapp"></ion-icon>
-      </a>
+            <li><a href="#">Inscrever-se ao NLW</a></li>
+            <li><a href="#">Baixar meu e-book</a></li>
+            <li><a href="#">Ver meu portifólio</a></li>
+            <li>
+              <a href="https://rocketseat.com.br/discover" target="_blank">Melhor curso para Iniciantes</a>
+            </li>
+          </ul>
+
+          <!-- Seção de ícones de redes sociais -->
+          <div id="icones">
+            <!-- Ícone do Instagram -->
+            <a target="_blank">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+            <!-- Ícone do GitHub -->
+            <a href="" target="_blank">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+            <!-- Ícone do Discord -->
+            <a href="" target="_blank">
+              <ion-icon name="logo-discord"></ion-icon>
+            </a>
+            <!-- Ícone do WhatsApp -->
+            <a href="" target="_blank">
+              <ion-icon name="logo-whatsapp"></ion-icon>
+            </a>
+          </div>
+
+          <!-- Rodapé com link para a Rocketseat -->
+          <footer>
+            Apenas um garoto entrando no mundo da programação pela 
+            <a href="https://rocketseat.com.br" target="_blank">Rocketseat</a>
+          </footer>
+        </div>
+      </div>
     </div>
-    <footer>Apenas um garoto entrando no mundo da programação pela <a href="https://rocketseat.com.br" target="_blank">Rocketseat</a></footer>
-    </div>
-    </div>
-    </div>
+
+    <!-- Importação de ícones do Ionicons -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
+    <!-- Script JS para interatividade da página -->
     <script src="script.js"></script>
-
   </body>
 </html>
