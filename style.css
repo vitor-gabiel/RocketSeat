@@ -5,10 +5,9 @@
 }
 
 :root {
-  background: url(./assets/GaaraWallpaper.jpeg) no-repeat 75px 100px;
-  background-color: #ff9432; 
+  background: url(./assets/Wallpaper\ Naruto\ escuro.jpg) no-repeat center/cover;
   --trocar-tema: url(./assets/moon.svg);
-  --cor-texto-padrao: black;
+  --cor-texto-padrao: white;
   --cor-icones-padrao: white;
   --cor-footer-padrao: white;
   --cor-borda-padrao: rgba(255, 255, 255, 0.4);
@@ -20,7 +19,7 @@
 }
 
 .light {
-  background: url(assets/bg-mobile-light.jpg) no-repeat center/cover;
+  background: url(assets/Wallpaper\ Naruto\ claro.jpg) no-repeat center/cover;
   --trocar-tema: url(./assets/sun-horizon.svg);
   --cor-texto-padrao: black;
   --cor-icones-padrao: black;
