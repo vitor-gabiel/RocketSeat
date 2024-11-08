@@ -46,7 +46,7 @@ Esse projeto está sob a licença MIT.
 
 ---
 
-Local de aprendizado [Discover - RockeatSeat](https://rockeatseat.com.br/discover)
+Local de aprendizado [Discover - RockeatSeat](https://rocketseat.com.br/discover)
 
 
 Feito com ♥ by Rocketseat :wave: [Participe da nossa comunidade!](https://discord.gg/rocketseat)
