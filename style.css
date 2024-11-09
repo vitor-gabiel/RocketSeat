@@ -5,7 +5,7 @@
 }
 
 :root {
-  background: url(./assets/Wallpaper\ Naruto\ escuro\ mobile.JPG);
+  background: url(./assets/Wallpaper-Naruto-escuro-mobile.JPG);
   background-color: #010101;
   --trocar-tema: url(./assets/moon.svg);
   --cor-texto-padrao: white;
@@ -22,7 +22,7 @@
 }
 
 .light {
-  background: url(assets/Wallpaper\ Naruto\ claro\ mobile.JPG);
+  background: url(assets/Wallpaper-Naruto-claro-mobile.JPG);
   --trocar-tema: url(./assets/sun-horizon.svg);
   --cor-texto-padrao: black;
   --cor-icones-padrao: black;
