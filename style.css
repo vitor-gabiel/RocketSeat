@@ -5,7 +5,8 @@
 }
 
 :root {
-  background: url(./assets/Wallpaper\ Naruto\ escuro.jpg) no-repeat center/cover;
+  background: url(./assets/Wallpaper\ Naruto\ escuro\ mobile.JPG);
+  background-color: #010101;
   --trocar-tema: url(./assets/moon.svg);
   --cor-texto-padrao: white;
   --cor-icones-padrao: white;
@@ -16,10 +17,12 @@
   --cor-borda-botoes: rgba(255, 255, 255, 0.6);
   --highlight-color: rgba(255, 255, 255, 0.4);
   --fundo-botoes-hover: rgba(255, 255, 255, 0.6);
+  --blur-borda-trocar-tema: rgba(255, 255, 255, 0.3);
+  --blur-trocar-tema: rgba(255, 255, 255, 0.2);
 }
 
 .light {
-  background: url(assets/Wallpaper\ Naruto\ claro.jpg) no-repeat center/cover;
+  background: url(assets/Wallpaper\ Naruto\ claro\ mobile.JPG);
   --trocar-tema: url(./assets/sun-horizon.svg);
   --cor-texto-padrao: black;
   --cor-icones-padrao: black;
@@ -29,6 +32,8 @@
   --cor-background-botoes: rgba(255, 255, 255, 0.3);
   --highlight-color: rgba(0, 0, 0, 0.2);
   --fundo-botoes-hover: rgba(0, 0, 0, 0.2);
+  --blur-borda-trocar-tema: rgba(0, 0, 0, 0.7);
+  --blur-trocar-tema: rgba(0, 0, 0, 0.3);
 }
 
 body {
@@ -101,11 +106,15 @@ body * {
   left: 0;
   transform: translateY(-50%);
   top: 50%;
+  animation: animacao-trocar-tema-light-dark 0.2s forwards;
+}
+
+#trocar-tema button:hover {
+  outline: 8px solid var(--fundo-botoes-hover);
 }
 
 .light #trocar-tema button {
-  left: initial;
-  right: 0;
+  animation: animacao-trocar-tema-dark-light 0.2s forwards;
 }
 
 #trocar-tema span {
@@ -183,11 +192,29 @@ footer a {
   color: var(--cor-footer-padrao);
 }
 
+@keyframes animacao-trocar-tema-dark-light{
+  from{
+    left: 0;
+  }
+  to{
+    left: 50%;
+  }
+}
+
+@keyframes animacao-trocar-tema-light-dark {
+  from{
+    left: 50%;
+  }
+  to{
+    left: 0;
+  }
+}
+
 #blur {
-  border: 1px solid rgba(12, 12, 12, 0.145);
+  border: 1px solid var(--blur-borda-trocar-tema);
   border-radius: 15px;
   padding: 15px;
   height: 805px;
   margin: 35px;
-  background: rgba(12, 12, 12, 0.4);
+  background: var(--blur-trocar-tema);
 }
