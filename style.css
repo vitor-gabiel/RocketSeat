@@ -33,7 +33,7 @@
   --cor-borda-botoes: rgba(0, 0, 0, 1);
   --cor-background-botoes: rgba(0, 0, 0, 0.2);
   --highlight-color: rgba(0, 0, 0, 0.2);
-  --fundo-botoes-hover: rgba(0, 0, 0, 0.2);
+  --fundo-botoes-hover: rgba(0, 0, 0, 0.5);
   --blur-borda-trocar-tema: rgba(0, 0, 0, 0.7);
   --blur-trocar-tema: rgba(0, 0, 0, 0.3);
 }
@@ -191,7 +191,8 @@ ul li a:hover {
 
 footer {
   text-align: center;
-  font-size: 15px;
+  font-weight: 500;
+  font-size: 20px;
   color: var(--cor-footer-padrao);
 }
 
