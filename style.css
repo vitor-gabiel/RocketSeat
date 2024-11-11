@@ -1,3 +1,4 @@
+/* Resetando margin, padding e box-sizing para todos os elementos */
 * {
   margin: 0;
   padding: 0;
@@ -5,27 +6,27 @@
   position: relative;
 }
 
+/* Definindo variáveis de estilo padrão no modo escuro */
 :root {
   background: url(./assets/Wallpaper-Naruto-escuro-mobile.JPG);
   background-color: #010101;
-  --trocar-tema: url(./assets/moon.svg);
+  --trocar-tema: url(./assets/moon.svg); /* Ícone para troca de tema */
   --cor-texto-padrao: white;
   --cor-icones-padrao: white;
   --cor-footer-padrao: white;
   --cor-borda-padrao: rgba(255, 255, 255, 0.4);
-  --cor-borda-botoes: rgba(255, 255, 255, 0.5);
-  --cor-background-botoes: rgba(255, 255, 255, 0.2);
   --cor-borda-botoes: rgba(255, 255, 255, 0.6);
+  --cor-background-botoes: rgba(255, 255, 255, 0.2);
   --highlight-color: rgba(255, 255, 255, 0.4);
   --fundo-botoes-hover: rgba(255, 255, 255, 0.6);
   --blur-borda-trocar-tema: rgba(255, 255, 255, 0.3);
   --blur-trocar-tema: rgba(255, 255, 255, 0.2);
-  
 }
 
+/* Definindo variáveis de estilo para o modo claro */
 .light {
   background: url(assets/Wallpaper-Naruto-claro-mobile.JPG);
-  --trocar-tema: url(./assets/sun-horizon.svg);
+  --trocar-tema: url(./assets/sun-horizon.svg); /* Ícone para troca de tema */
   --cor-texto-padrao: black;
   --cor-icones-padrao: black;
   --cor-footer-padrao: black;
@@ -38,23 +39,18 @@
   --blur-trocar-tema: rgba(0, 0, 0, 0.3);
 }
 
+/* Definindo o background da página */
 body {
-  /* Maneira usando individualmente*/
-  /* background-color: #FF9432; 
-  background-image: var(--background);
- background-repeat: no-repeat;
- background-position-y: 75px;
- background-position-x: center;  */
-  /* \Maneira usando tudo junto*/
   background: var(--background);
 }
 
+/* Estilizando todos os textos com a fonte e a cor padrão */
 body * {
   font-family: 'Inter', sans-serif;
   color: var(--cor-texto-padrao);
 }
 
-
+/* Container principal da página */
 #container {
   padding: 0 5px;
   width: 100%;
@@ -62,50 +58,46 @@ body * {
   height: 712px;
   max-height: 100%;
   margin: 56px auto 0px auto;
-  /*margin: 
-  1 propriedade = Cima, Baixo, Esquerda, Direita
-  2 propriedade = Cima,Baixo Esquerda,Direita
-  3 propriedade = Cima, Esquerda,Direita Baixo
-  4 propriedade = Cima, Baixo, Esquerda, Direita*/
 }
 
+/* Estilizando o perfil */
 #profile {
   text-align: center;
   padding: 25px;
   position: relative;
 }
 
+/* Estilizando a imagem do perfil */
 #profile img {
-  /*Como fazer um alinhamento de imagem?*/
   display: flex;
   width: 145px;
   margin: auto;
   border-radius: 50%;
 }
 
+/* Estilizando o texto do perfil */
 #profile p {
   position: relative;
   font-weight: 800;
   line-height: 25px;
   margin-top: 8px;
   font-size: 25px;
-  
 }
 
+/* Estilizando o botão de troca de tema */
 #trocar-tema {
   position: relative;
   width: 64px;
   margin: 4px auto;
 }
 
-#trocar-tema button{
+#trocar-tema button {
   color: white;
   height: 32px;
   width: 32px;
   border-radius: 50%;
   border: 0;
-  background: white var(--trocar-tema)  center no-repeat;
-  
+  background: white var(--trocar-tema) center no-repeat;
   position: absolute;
   z-index: 1;
   left: 0;
@@ -114,10 +106,12 @@ body * {
   animation: animacao-trocar-tema-light-dark 0.2s forwards;
 }
 
+/* Efeito hover no botão de troca de tema */
 #trocar-tema button:hover {
   outline: 8px solid var(--fundo-botoes-hover);
 }
 
+/* Definindo animações para troca de tema */
 .light #trocar-tema button {
   animation: animacao-trocar-tema-dark-light 0.2s forwards;
 }
@@ -131,11 +125,9 @@ body * {
   border: 1px solid var(--cor-borda-padrao);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
-  
 }
 
-
-/* Links*/
+/* Estilizando links */
 ul {
   position: relative;
   list-style: none;
@@ -144,7 +136,9 @@ ul {
   gap: 10px;
   padding: 24px 0;
 }
-ul li a{
+
+/* Estilo dos links de navegação */
+ul li a {
   background: var(--cor-background-botoes);
   border: 1px solid var(--cor-borda-botoes);
   backdrop-filter: blur(3px);
@@ -157,13 +151,16 @@ ul li a{
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: background .2s
+  transition: background 0.2s;
 }
 
+/* Efeito hover nos links */
 ul li a:hover {
   background: var(--fundo-botoes-hover);
-  border: 1px solid var(--cor-borda-padrao)
+  border: 1px solid var(--cor-borda-padrao);
 }
+
+/* Estilo dos ícones */
 #icones {
   position: relative;
   display: flex;
@@ -173,7 +170,7 @@ ul li a:hover {
 }
 
 #icones a * {
-  color: var(--cor-icones-padrao); 
+  color: var(--cor-icones-padrao);
 }
 
 #icones a {
@@ -181,14 +178,16 @@ ul li a:hover {
   align-items: center;
   justify-content: center;
   padding: 16px;
-  transition: background .2s;
+  transition: background 0.2s;
   border-radius: 50%;
 }
 
+/* Efeito hover nos ícones */
 #icones a:hover {
   background: var(--highlight-color);
 }
 
+/* Estilo do rodapé */
 footer {
   text-align: center;
   font-weight: 500;
@@ -200,88 +199,94 @@ footer a {
   color: var(--cor-footer-padrao);
 }
 
-@keyframes animacao-trocar-tema-dark-light{
-  from{
+/* Animações de troca de tema */
+@keyframes animacao-trocar-tema-dark-light {
+  from {
     left: 0;
   }
-  to{
+  to {
     left: 50%;
   }
 }
 
 @keyframes animacao-trocar-tema-light-dark {
-  from{
+  from {
     left: 50%;
   }
-  to{
+  to {
     left: 0;
-  
   }
 }
 
+/* Estilos para telas menores que 720px */
 @media (max-width: 720px) {
   #container {
     position: relative;
-    
     width: 424px;
     height: 975px;
   }
+
   footer {
     bottom: 50px;
     position: absolute;
     font-size: 20px;
   }
+
   #icones {
     position: absolute;
     bottom: 120px;
     font-size: 35px;
     width: 100%;
   }
+
   ul {
     position: absolute;
     width: 100%;
     bottom: 275px;
     gap: 25px;
   }
+
+  /* Estilização responsiva para botão de troca de tema */
   #trocar-tema {
     width: 64px;
     position: absolute;
     bottom: 655px;
     left: 180px;
     margin: 4px auto;
-    /* border: 1px solid blue; */
-  }
-  #trocar-tema span {
-  display: block;
-  height: 34px;
-  width: 75px;
-  border-radius: 9999px;
-  background: var(--cor-background-botoes);
-  border: 1px solid var(--cor-borda-padrao);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  
   }
 
-  #trocar-tema button{
-  color: white;
-  height: 38px;
-  width: 38px;
-  border-radius: 50%;
-  border: 0;
-  background: white var(--trocar-tema)  center no-repeat;
-  
-  position: absolute;
-  z-index: 1;
-  left: 0;
-  transform: translateY(-50%);
-  top: 50%; 
+  #trocar-tema span {
+    display: block;
+    height: 34px;
+    width: 75px;
+    border-radius: 9999px;
+    background: var(--cor-background-botoes);
+    border: 1px solid var(--cor-borda-padrao);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
   }
+
+  #trocar-tema button {
+    color: white;
+    height: 38px;
+    width: 38px;
+    border-radius: 50%;
+    border: 0;
+    background: white var(--trocar-tema) center no-repeat;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    transform: translateY(-50%);
+    top: 50%;
+  }
+
+  /* Estilização responsiva para o perfil */
   #profile {
     position: absolute;
     width: 100%;
     bottom: 695px;
   }
+
   #profile p {
     font-size: 30px;
   }
