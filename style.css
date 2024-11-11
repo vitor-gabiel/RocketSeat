@@ -220,7 +220,7 @@ footer a {
 @media (max-width: 720px) {
   #container {
     position: relative;
-    border: 1px solid blue;
+    
     width: 424px;
     height: 975px;
   }
