@@ -14,12 +14,13 @@
   --cor-footer-padrao: white;
   --cor-borda-padrao: rgba(255, 255, 255, 0.4);
   --cor-borda-botoes: rgba(255, 255, 255, 0.5);
-  --cor-background-botoes: rgba(255, 255, 255, 0.3);
+  --cor-background-botoes: rgba(255, 255, 255, 0.2);
   --cor-borda-botoes: rgba(255, 255, 255, 0.6);
   --highlight-color: rgba(255, 255, 255, 0.4);
   --fundo-botoes-hover: rgba(255, 255, 255, 0.6);
   --blur-borda-trocar-tema: rgba(255, 255, 255, 0.3);
   --blur-trocar-tema: rgba(255, 255, 255, 0.2);
+  
 }
 
 .light {
@@ -30,7 +31,7 @@
   --cor-footer-padrao: black;
   --cor-borda-padrao: rgba(0, 0, 0, 1);
   --cor-borda-botoes: rgba(0, 0, 0, 1);
-  --cor-background-botoes: rgba(255, 255, 255, 0.3);
+  --cor-background-botoes: rgba(0, 0, 0, 0.2);
   --highlight-color: rgba(0, 0, 0, 0.2);
   --fundo-botoes-hover: rgba(0, 0, 0, 0.2);
   --blur-borda-trocar-tema: rgba(0, 0, 0, 0.7);
@@ -146,8 +147,8 @@ ul {
 ul li a{
   background: var(--cor-background-botoes);
   border: 1px solid var(--cor-borda-botoes);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
   border-radius: 8px;
   text-decoration: none;
   padding: 16px 24px;
@@ -227,6 +228,7 @@ footer a {
   footer {
     bottom: 50px;
     position: absolute;
+    font-size: 20px;
   }
   #icones {
     position: absolute;
@@ -280,6 +282,6 @@ footer a {
     bottom: 695px;
   }
   #profile p {
-    font-size: 35px;
+    font-size: 30px;
   }
 }
