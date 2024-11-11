@@ -55,9 +55,11 @@ body * {
 
 #container {
   padding: 0 5px;
+  border: 1px solid yellow;
   width: 100%;
   max-width: 588px;
   height: 712px;
+  max-height: 100%;
   margin: 56px auto 0px auto;
   /*margin: 
   1 propriedade = Cima, Baixo, Esquerda, Direita
@@ -211,22 +213,16 @@ footer a {
   }
 }
 
-/* @media (max-width: 2400px) {
-  #blur {
-    border: 1px solid var(--blur-borda-trocar-tema);
-    border-radius: 15px;
-    padding: 15px;
-    height: 1000px;
-    margin: 35px;
-    background: var(--blur-trocar-tema);
+@media (max-width: 424px) {
+  #container {
+    border: 1px solid blue;
+    width: 424px;
+    height: 975px;
+  }
+  footer {
+    color: blue;
+    height: 975px;
+    position: absolute;
   }
 }
 
-#blur {
-  border: 1px solid var(--blur-borda-trocar-tema);
-  border-radius: 15px;
-  padding: 15px;
-  height: 805px;
-  margin: 35px;
-  background: var(--blur-trocar-tema);
-} */
