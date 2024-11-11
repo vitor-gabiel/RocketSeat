@@ -207,6 +207,18 @@ footer a {
   }
   to{
     left: 0;
+  
+  }
+}
+
+@media (max-width: 425px) {
+  #blur {
+    border: 1px solid var(--blur-borda-trocar-tema);
+    border-radius: 15px;
+    padding: 15px;
+    height: 1000px;
+    margin: 35px;
+    background: var(--blur-trocar-tema);
   }
 }
 
