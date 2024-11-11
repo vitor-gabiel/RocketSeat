@@ -211,7 +211,7 @@ footer a {
   }
 }
 
-@media (max-width: 425px) {
+/* @media (max-width: 2400px) {
   #blur {
     border: 1px solid var(--blur-borda-trocar-tema);
     border-radius: 15px;
@@ -229,4 +229,4 @@ footer a {
   height: 805px;
   margin: 35px;
   background: var(--blur-trocar-tema);
-}
+} */
